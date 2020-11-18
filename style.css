@@ -12,3 +12,33 @@ body {
     padding: 25%;
 
 }
+.cim {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+
+}
+.tetel {
+    padding: 5%;
+    margin: 5%;
+    background-color: whitesmoke;
+}
+.karakter {
+    font-size: 17px;
+    text-align: justify;
+}
+.kep{
+    max-width: 30%;
+    height: auto;
+    float: right;
+    padding: 2px;
+    border: 2px solid green;
+    margin: 10px;
+}
+.hr {
+    clear: both;
+}
+.forras {
+    text-align: center;
+    font-size: 20px;
+}
