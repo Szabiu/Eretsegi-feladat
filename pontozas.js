@@ -9,8 +9,12 @@ function check(){
 	var messages = ["Jó munka!", "Rendben", "Többet kellet volna gyakorolni"];
 	var score;
 
-
-    if (ossz>=120) {
+    if  (a > 4 || b > 4 || c > 4 || d > 3)
+    {
+        pont = 1;
+       score = 2;
+    }
+    else if (ossz>=120) {
         pont = 5;
         score = 0;
     }

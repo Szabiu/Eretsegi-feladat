@@ -8,6 +8,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="pontozo.css" rel="stylesheet">
  
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -34,32 +35,53 @@
           </div>
         </div>
       </nav>
+
       <div class="container" id="doboz">
-        <h1>Pontozólap</h1>
-          <div class="col-md-5 lap">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="text-align: center;">Pontozólap</h1>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 col-xs-12 lap">
           <form id="pontozo" name="pontozo">
             <p>Írásbeli</p>
-            <p class>Hálózat: 40 pont</p> <input type="text" id="halo" name="halo">
-            <p class>Programozás: 40 pont</p> <input type="text" id="prog" name="prog" >
-            <p class>Weboldal és adatbázis: 40 pont</p> <input type="text" id="web" name="web">
+            <p class>Hálózat: 40 pont</p> <input type="number" max="40" min="0" required placeholder="0" id="halo" name="halo" >
+            <p class>Programozás: 40 pont</p> <input type="number" max="40" min="0" required placeholder="0" id="prog" name="prog" >
+            <p class>Weboldal és adatbázis: 40 pont</p> <input type="number" max="40" min="0" required placeholder="0" id="web" name="web">
             <br><br>
             <p>Összesen: 120 pont</p>
             <br><br>
             <p>Szóbeli</p>
-            <input type="text" id="szobeli" name="szobeli">
+            <input type="number" max="30" min="0" id="szobeli" name="szobeli" required placeholder="0">
             <br><br>
             <p>Összesen: 30 pont</p>
             <input id="button" type="button" value="Számol" onclick="check()">
           </form>
-          <div id = "after_submit">
-            <p>Elért pontszám:</p>
-          <p id="ertek"></p>
-          <p>Érdemjegy:</p>
-          <p id="jegy"></p>
-            <p id = "message"></p>
-            <img id = "picture">  
+
+          </div>
+          
+          <div class="col-md-6 col-xs-12 lap">
+            <div id = "after_submit">
+              <p>Elért pontszám:</p>
+            <p id="ertek"></p>
+            <p>Érdemjegy:</p>
+            <p id="jegy"></p>
+              <p id = "message"></p>
+              <img id = "picture">  
+            </div>
+          </div>
+        
         </div>
+
       </div>
+
+      
+
       <script src="pontozas.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
